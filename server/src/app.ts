@@ -16,4 +16,7 @@ app.get("/", (_req, res) => res.json({ status: "ok" }));
 // Routes
 app.use("/lookup", lookupRouter);
 
+// Routes
+app.use("/", routes);
+
 export default app;
